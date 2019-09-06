@@ -18,6 +18,7 @@ contract('SimpleContract', (accounts) => {
     await instance.changeName('your name');
     const value = await instance.getName();
 
+    console.log(value);
     assert.equal(value, 'your name');
   });
 
